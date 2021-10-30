@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Parallels">
+    <meta name="author" content="Jan Van den Bogaert & Stefaan Beernaert">
+    <meta name="keywords" content="Parallels,html5,css3,Bootstrap,js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallels</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+<header id="header-jan" class="bg-zwart">
+    <section class="container-fluid">
+        <div class="bg-zwart">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand d-flex align-items-center " href="#">
+                                <img alt="log" class="d-inline-block align-text-top"  src="images/logo.png">
+                                <p id="logonav" class="m-0  ps-3 display-5">Parallels</p>
+                            </a>
+                            <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                                    class="navbar-toggler ms-auto" data-bs-target="#navbarNav" data-bs-toggle="collapse"
+                                    type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse mt-5 mb-5" id="navbarNav">
+                                <ul class="navbar-nav d-flex justify-content-end w-100">
+                                    <li class="nav-item me-5">
+                                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link" href="#Our-Services">Services</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link" href="#Portfolio">Portfolio</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link" href="#main-sec-4-our-price-a-stefaan">Pricing</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link" href="#About-us">About</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <a class="nav-link" href="#main-sec-10-contactus-stefaan">Contact</a>
+                                    </li>
+                                    <li class="nav-item me-5">
+                                        <div class="searchbar d-flex">
+                                            <input class="search_input color-white" type="text" placeholder="Search...">
+                                            <a href="#" class="search_icon"><i class="bi bi-search"></i></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hero-jan">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/Slider.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption h-50 mb-5 d-inline-block text-hero">
+                        <h1 class="h1">Welcome to Parallels</h1>
+                        <p>Clean Responsive Parallax Theme</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Slider.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption h-50 mb-5 d-inline-block text-hero">
+                        <h1 class="h1">Welcome to Parallels</h1>
+                        <p>Clean Responsive Parallax Theme</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Slider.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption h-50 mb-5 d-inline-block text-hero">
+                        <h1 class="h1">Welcome to Parallels</h1>
+                        <p>Clean Responsive Parallax Theme</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev display-3 d-none d-lg-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control" aria-hidden="false"><i class="bi bi-arrow-left-circle slider"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next display-3 d-none d-lg-block" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control " aria-hidden="false"><i class="bi bi-arrow-right-circle slider"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="header-sec-ourservices-jan">
+        <div class="container-fluid">
+            <div class="col-lg-10 offset-lg-1">
+                <h2  id="Our-Services" class="text-center py-3 m-0 mt-5 color-white mb-5 h2 display-3">Our Services</h2>
+                <div class="row text-center">
+                    <article class="col-12 col-lg-3 mb-5">
+                        <img id="icon-1" class="rounded-circle bg-icon" src="images/icon-1.png" alt="icon-1">
+                        <h3 class="color-white lighter mt-3 mb-4">WebDesign</h3>
+                        <p class="px-5 lighter color-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed  eu varius dui. Nunc id scelerisque ligula.</p>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5">
+                        <img id="icon-2" class="rounded-circle bg-icon " src="images/icon-2.png" alt="icon-2">
+                        <h3 class=" color-white lighter mt-3 mb-4">UIDesign</h3>
+                        <p class="px-5 lighter color-white">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5">
+                        <img id="icon-3" class="rounded-circle bg-icon" src="images/icon-3.png" alt="icon-3">
+                        <h3 class=" color-white lighter mt-3 mb-4">Prototype</h3>
+                        <p class="px-5 lighter color-white">Sed vestibulum mi quis est lacinia tempor. Praesent vitae commodo tellus. Cras eu est sem.</p>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5">
+                        <img id="icon-4" class="rounded-circle bg-icon" src="images/icon-4.png" alt="icon-4">
+                        <h3 class=" color-white lighter mt-3 mb-4">Photography</h3>
+                        <p class="px-5 lighter color-white">Donec tempus lacinia purus ut tincidunt. Nunc vel feugiat leo. Nunc iaculis hendrerit gravida.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="bg-zwart">
+    <section id="main-sec-1-clean-theme-jan">
+        <div class="container-fluid bg-bruin">
+            <div class="col-10 offset-1">
+                <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="300" class="p-bruin-j ps-5">
+                      <p class="display-1 color-white">Do you like this clean theme?</p>
+                      <div class="d-grid gap-3 d-md-block pt-5 ">
+                              <button type="button" class="sbpurchase">Purchase</button>
+                              <button type="button" class="sbfollow ps-4 pe-4">Follow</button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-sec-2-portfollio-jan">
+        <div class="container-fluid">
+            <h2  id="Portfolio" class="text-center py-3 m-0 mt-5 color-white mb-4 h2 display-3">Portfolio</h2>
+            <ul class="nav nav-pills mb-3 d-flex justify-content-center " id="pills-tab" role="tablist">
+                <li class="nav-item " role="presentation">
+                    <button class="nav-link active " id="pills-Web-design-tab" data-bs-toggle="pill" data-bs-target="#pills-Web-design" type="button" role="tab" aria-controls="pills-Web-design" aria-selected="true">Web-design</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-UI-Design-tab" data-bs-toggle="pill" data-bs-target="#pills-UI-Design" type="button" role="tab" aria-controls="pills-UI-Design" aria-selected="false">UI Design</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Prototype-tab" data-bs-toggle="pill" data-bs-target="#pills-Prototype" type="button" role="tab" aria-controls="pills-Prototype" aria-selected="false">Prototype</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-Photography-tab" data-bs-toggle="pill" data-bs-target="#pills-Photography" type="button" role="tab" aria-controls="pills-Photography" aria-selected="false">Photography</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class=" col-lg-12 tab-pane fade show active" id="pills-Web-design" role="tabpanel" aria-labelledby="pills-Web-design-tab">
+                    <div class="row text-center g-4 pt-1">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="row text-center g-4">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item bg-zwart border-none">
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="row text-center g-4">
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid col-1 mx-auto pb-5">
+                                <button class="btn white-btn p-1" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Load more</button>
+                                <img class="mx-auto" src="images/Arrow.png" alt="Arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 tab-pane fade" id="pills-UI-Design" role="tabpanel" aria-labelledby="pills-UI-Design-tab">
+                    <div class="row text-center g-4 pt-1">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="row text-center g-4">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample2">
+                        <div class="accordion-item bg-zwart border-none">
+                            <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="row text-center g-5">
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid col-1 mx-auto pb-5">
+                                <button class="btn white-btn p-1" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">Load more</button>
+                                <img class="mx-auto" src="images/Arrow.png" alt="Arrow">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-12 tab-pane fade" id="pills-Prototype" role="tabpanel" aria-labelledby="pills-Prototype-tab">
+                    <div class="row text-center g-4 pt-1">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="row text-center g-4">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample3">
+                        <div class="accordion-item bg-zwart border-none">
+                            <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="row text-center g-5">
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid col-1 mx-auto pb-5">
+                                <button class="btn white-btn p-1" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne2">Load more</button>
+                                <img class="mx-auto" src="images/Arrow.png" alt="Arrow">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="col-lg-12 tab-pane fade" id="pills-Photography" role="tabpanel" aria-labelledby="pills-Photography-tab">
+                    <div class="row text-center g-4 pt-1">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="row text-center g-4">
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                        <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                            <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                            <div class="after mpro"><i class="bi bi-eye"></i></div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample4">
+                        <div class="accordion-item bg-zwart border-none">
+                            <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="row text-center g-5">
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                    <div class="image-container col-12 col-lg-3 mb-4 color-white">
+                                        <img class="img-fluid" src="http://via.placeholder.com/400x400" alt="test">
+                                        <div class="after mpro"><i class="bi bi-eye"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid col-1 mx-auto pb-5">
+                                <button class="btn white-btn p-1" type="button"  data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne2">Load more</button>
+                                <img class="mx-auto" src="images/Arrow.png" alt="Arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-sec-3-pricing-table-stefaan" class="bg-bruin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 offset-1 p-bruin-j " data-aos="fade-down-left">
+                    <p class="display-2 text-white roboto-light">Pricing Table</p>
+                    <p class="display-5 fw-bold text-white">Clean beautiful flat table</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-zwart"  id="main-sec-4-our-price-a-stefaan">
+        <div class="container-fluid">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row">
+                    <p class="sbourprice text-center pt-5 lighter">Our Price</p>
+                    <article class=" col-12 col-lg-4 mb-5 d-flex justify-content-center">
+                        <div class="card text-center card-container" style="width: 15.5rem;border: none">
+                            <div class="sbcardsh sbcardb card-body card-flip px-0 p-0 rounded-3">
+                                <h3 class="card-title py-3">Website Hosting</h3>
+                                <p  class="sbmonthly card-border mb-5 py-3">$10/month</p>
+                                <p class="card-text"><span class="card-textwhite">2x </span>Option 1</p>
+                                <p class="card-text"><span class="card-textwhite">Free </span>Option 2</p>
+                                <p class="card-text"><span class="card-textwhite">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="card-textwhite">Unlimited </span>Option 1</p>
+                                <p class="card-text sbbtmcardbtn"><span class="card-textwhite">1x </span>Option 1</p>
+                                <button  class="sbbtngr mb-3 text-white" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+                        <div class=" card text-center card-container" style="width: 15.5rem;border: none">
+                            <div class="card-flip sbcardsh card-body2 px-0 p-0 rounded-3">
+                                <h3 class="card-title py-3">Reseller Cloud</h3>
+                                <p  class="sbmonthly card-border mb-5 py-3">$135/month</p>
+                                <p class="card-text"><span class="sbcardblack">5x </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardblack">Free </span>Option 2</p>
+                                <p class="card-text"><span class="sbcardblack">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="sbcardblack">Unlimited </span>Option 4</p>
+                                <p class="card-text sbbtmcardbtn"><span class="sbcardblack">5x </span>Option 5</p>
+                                <button  class="sbbtngr mb-3 text-white" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+                        <div class=" card text-center card-container" style="width: 15.5rem;border: none">
+                            <div class="card-flip sbcardsh sbcardb card-body px-0 p-0 rounded-3">
+                                <h3 class="card-title py-3">Dedicated Hosting</h3>
+                                <p  class="sbmonthly card-border mb-5 py-3">$235/month</p>
+                                <p class="card-text"><span class="card-textwhite">10x </span>Option 1</p>
+                                <p class="card-text"><span class="card-textwhite">Free </span>Option 2</p>
+                                <p class="card-text"><span class="card-textwhite">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="card-textwhite">Unlimited </span>Option 4</p>
+                                <p class="card-text sbbtmcardbtn"><span class="card-textwhite">1x </span>Option 5</p>
+                                <button  class="sbbtngr mb-3 text-white" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-zwart" id="main-sec-4-our-price-b-stefaan">
+        <div class="container-fluid">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row">
+                    <article class="col-12 col-lg-3 mb-5 d-flex justify-content-center">
+                        <div class=" card text-center card-container" style="width: 12.87rem;border: none">
+                            <div class="card-flip sbcardsh card-body px-0 p-0 rounded-3">
+                                <h3 class="card-title py-3">Website Hosting</h3>
+                                <p id="sb10month" class="card-border mb-5 py-3">$10/month</p>
+                                <p class="card-text"><span class="sbcardspbold">2x </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardspbold">Free </span>Option 2</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 1</p>
+                                <p class="card-text sbbtmcardbtn"><span class="sbcardspbold ">1x </span>Option 1</p>
+                                <button id="sbbtn1" class="mb-3" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5 d-flex justify-content-center">
+                        <div class=" card  text-center card-container" style="width: 12.87rem;border: none">
+                            <div class="card-flip sbcardsh card-body rounded-3">
+                                <h3 class="card-title py-3">Reseller cloud</h3>
+                                <p id="sb135month" class="card-text mb-5 py-3">$135/month</p>
+                                <p class="card-text"><span class="sbcardspbold">5x </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardspbold">Free </span>Option 2</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 1</p>
+                                <p class="card-text sbbtmcardbtn"><span class="sbcardspbold ">5x </span>Option 5</p>
+                                <button id="sbbtn2" class="mb-3" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5 d-flex justify-content-center">
+                        <div class=" card  text-center col-lg-3 col-12 card-container" style="width: 12.87rem;border: none">
+                            <div class="sbcardsh card-body card-flip rounded-3">
+                                <h3 class="card-title py-3">Dedicated Hosting</h3>
+                                <p id="sb235month" class="card-text mb-5 py-3">$235/month</p>
+                                <p class="card-text"><span class="sbcardspbold">10x </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardspbold">Free </span>Option 2</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 4</p>
+                                <p class="card-text sbbtmcardbtn"><span class="sbcardspbold ">10x </span>Option 5</p>
+                                <button id="sbbtn3" class="mb-3" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-12 col-lg-3 mb-5 d-flex justify-content-center">
+                        <div class="card-container card  text-center" style="width: 12.87rem;border: none">
+                            <div class="sbcardsh card-body  card-flip rounded-3">
+                                <h3 class="card-title py-3">Website Hosting</h3>
+                                <p id="sb10month2" class="card-text mb-5 py-3">$10/month</p>
+                                <p class="card-text"><span class="sbcardspbold">2x </span>Option 1</p>
+                                <p class="card-text"><span class="sbcardspbold">Free </span>Option 2</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 3</p>
+                                <p class="card-text"><span class="sbcardspbold">Unlimited </span>Option 4</p>
+                                <p class="card-text sbbtmcardbtn"><span class="sbcardspbold">1x </span>Option 5</p>
+                                <button id="sbbtn4" class="mb-3" type="button" onclick="">Purchase</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-zwart" id="main-sec-5-ourclientsaboutus-stefaan">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <h3 id="sbhrh32" class="py-3 text-center mt-0 pt-5 color-white pb-5 background"><span id="sbclients" class="bg-zwart pe-2 ps-2">  CLIENTS ABOUT US  </span></h3>
+                </div>
+                <div class="col-lg-10 offset-lg-1 ">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="row">
+<!--                                 tekens kleiner gezet dan 300 px anders problemen met bottom space-->
+                                <div class="col-2 size-point  ">&#8220;</div>
+                                <div class="col-8 text-white">
+                                    <div id="carousel-clients-about-us" class="carousel slide " data-bs-ride="carousel"  data-interval="1000">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="bg-zwart">
+                                                <div class="">
+                                                    <div class="row text-center">
+                                                        <blockquote class=" color-white">
+                                                            <p class="sbcarpabus px-5 ">Donec leo elit, dignissim eu elit vitae, aliquam tincidunt purus. Proin id risus ut sem vehicula faucibus. Fusce sed libero nec quam tempus facilisis. Vestibulum venenatis nisl ac feugiat aliquet. Sed euismod ligula arcu, et mollis est volutpat et. Aenean sed nulla placerat neque lacinia ullamcorper.</p>
+                                                            <p class="sbperry  pt-2">#Perry Maliton</p>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="bg-zwart">
+                                                <div class="">
+                                                    <div class="row text-center">
+
+                                                        <blockquote class=" color-white">
+                                                            <p class="sbcarpabus px-5 ">Donec leo elit, dignissim eu elit vitae, aliquam tincidunt purus. Proin id risus ut sem vehicula faucibus. Fusce sed libero nec quam tempus facilisis. Vestibulum venenatis nisl ac feugiat aliquet. Sed euismod ligula arcu, et mollis est volutpat et. Aenean sed nulla placerat neque lacinia ullamcorper.</p>
+                                                            <p class="sbperry pt-2">#Joaquin Bravo</p>
+                                                        </blockquote>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="bg-zwart">
+                                                <div class="">
+                                                    <div class="row text-center">
+
+                                                        <blockquote class="color-white">
+                                                            <p class="sbcarpabus px-5 ">Donec leo elit, dignissim eu elit vitae, aliquam tincidunt purus. Proin id risus ut sem vehicula faucibus. Fusce sed libero nec quam tempus facilisis. Vestibulum venenatis nisl ac feugiat aliquet. Sed euismod ligula arcu, et mollis est volutpat et. Aenean sed nulla placerat neque lacinia ullamcorper.</p>
+                                                            <p class="sbperry pt-2">#John Hunt</p>
+                                                        </blockquote>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                                <div class="col-2 size-point  ">”</div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-sec-6-ourteam-jan">
+        <div class="container-fluid bg-bruin">
+            <div class="col-10 offset-1">
+                <div data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-delay="300" class="p-bruin-j ps-5">
+                    <p id="Our-team-1" class="display-1 m-0 color-white">Our team</p>
+                    <p id="Our-team-2" class="display-4 color-white">We a professional and progressive team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-sec-7-about-us-jan">
+        <div class="container-fluid">
+            <h2  id="About-us" class="text-center py-3 mt-0 pt-5 color-white pb-5 h2 display-3">About Us</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="bg-zwart">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="row text-center">
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="mark" class="" src="images/mark.png" alt="mark-1">
+                                        <h3 class="mt-3 mb-1">Mark Cream</h3>
+                                        <h4 class="mb-4 lighter">Developer</h4>
+                                        <p class="px-5 ">Curabitur congue libero mi, et lacinia sem blandit sit amet. Donec eu mi non magna rhoncus bibendum et eu dui. Nunc iaculis placerat sapien vel imperdiet.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="antonio" class=" " src="images/antonio.png" alt="antonio-2">
+                                        <h3 class="mt-3 mb-1">Antonio Paramo</h3>
+                                        <h4 class="mb-4 lighter">Fire Effects</h4>
+                                        <p class="px-5">Etiam pulvinar libero et scelerisque cursus. Sed eu nisl congue, gravida urna imperdiet, laoreet dolor. Morbi adipiscing neque erat, tincidunt porttitor est vestibulum ac.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="mario" class="" src="images/mario.png" alt="mario-3">
+                                        <h3 class="mt-3 mb-1">Mario Ballote</h3>
+                                        <h4 class="mb-4 lighter">Big Boss</h4>
+                                        <p class="px-5">Donec at pulvinar dolor, et lobortis est. Phasellus nibh nisi, blandit non velit sit amet, pulvinar vehicula nulla.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="ben" class="" src="images/ben.png" alt="ben-4">
+                                        <h3 class="mt-3 mb-1">Ben Bugatton</h3>
+                                        <h4 class="mb-4 lighter">Designer</h4>
+                                        <p class="px-5">Mauris dignissim felis quis justo malesuada gravida. Sed quis neque condimentum, luctus augue in, dapibus sapien.</p>
+                                    </article>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="bg-zwart">
+                            <div class="col-lg-10 offset-lg-1">
+                                <div class="row text-center">
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="mark5" class="" src="images/thomas.png" alt="mark-1">
+                                        <h3 class="mt-3 mb-1">Thomas Hardy</h3>
+                                        <h4 class="mb-4 lighter">Lead Developer</h4>
+                                        <p class="px-5 ">Curabitur congue libero mi, et lacinia sem blandit sit amet. Donec eu mi non magna rhoncus bibendum et eu dui. Nunc iaculis placerat sapien vel imperdiet.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="antonio5" class=" " src="images/martin.png" alt="antonio-2">
+                                        <h3 class="mt-3 mb-1">Martin Blank</h3>
+                                        <h4 class="mb-4 lighter">Developer</h4>
+                                        <p class="px-5">Etiam pulvinar libero et scelerisque cursus. Sed eu nisl congue, gravida urna imperdiet, laoreet dolor. Morbi adipiscing neque erat, tincidunt porttitor est vestibulum ac.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="mario5" class="" src="images/maria.png" alt="mario-3">
+                                        <h3 class="mt-3 mb-1">Maria Anders</h3>
+                                        <h4 class="mb-4 lighter">Designer</h4>
+                                        <p class="px-5">Donec at pulvinar dolor, et lobortis est. Phasellus nibh nisi, blandit non velit sit amet, pulvinar vehicula nulla.</p>
+                                    </article>
+                                    <article class="col-12 col-lg-3 mb-5 color-white">
+                                        <img id="ben5" class="" src="images/fran.png" alt="ben-4">
+                                        <h3 class="mt-3 mb-1">Fran Wilson</h3>
+                                        <h4 class="mb-4 lighter">Designer</h4>
+                                        <p class="px-5">Mauris dignissim felis quis justo malesuada gravida. Sed quis neque condimentum, luctus augue in, dapibus sapien.</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="main-sec-8-ourskills-jan">
+        <div class="col-lg-10 offset-lg-1">
+            <h2 id="OUR-SKILLS" class="py-3 text-center mt-0 pt-5 color-white pb-5 background bold"><span class="bg-zwart pe-5 ps-5">OUR SKILLS</span></h2>
+        </div>
+        <div class="col-lg-12" id="movej">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="row text-center d-flex justify-content-evenly">
+                    <div class="col-12 col-lg-2 mb-5">
+                        <div class="gauge1">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover"></div>
+                            </div>
+                        </div>
+                        <h3 class=" medium bold mt-3 mb-4 color-white">WEB-DESIGN</h3>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-5">
+                        <div class="gauge2">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover"></div>
+                            </div>
+                        </div>
+                        <h3 class=" medium bold mt-3 mb-4 color-white">CREATIVE</h3>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-5">
+                        <div class="gauge3">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover"></div>
+                            </div>
+                        </div>
+                        <h3 class=" medium bold mt-3 mb-4 color-white">UI-DESIGN</h3>
+                    </div>
+                    <div class="col-12 col-lg-2 mb-5">
+                        <div class="gauge4">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover"></div>
+                            </div>
+                        </div>
+                        <h3 class=" medium bold mt-3 mb-4 color-white">PROTOTYPES</h3>
+                    </div>
+                    <div class=" col-12 col-lg-2 mb-5 card-border">
+                        <div class="gauge5">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover"></div>
+                            </div>
+                        </div>
+                        <h3 class=" medium mt-3 mb-4 color-white">PHOTOGRAPHY</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-bruin" id="main-sec-9-6000px-stefaan">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="sb6000" class="col-lg-10 offset-lg-1 p-bruin-j" data-aos="flip-left">
+                    <p class="text-white mb-0 display-2">YOU LOOKED OVER 6000 PX</p>
+                    <p class="roboto-light text-white mb-0 display-4">That's Great!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-zwart" id="main-sec-10-contactus-stefaan">
+        <div class="container-fluid">
+            <div class="row col-lg-10 offset-lg-1">
+                <h2 class="text-center my-5 text-white roboto-light fs-1" id="sbcontacth2">Contact Us</h2>
+                <div class="col-lg-12 d-lg-flex">
+
+                    <div id="sbcontactform" class="col-lg-8 col-12">
+                        <h3 class="mb-0 text-white fs-5 ">MAIL</h3>
+                        <hr class="sbhr my-2">
+                        <div class="justify-content-evenly d-lg-flex my-2 ">
+                            <input class="sbinputname me-2 w-50"  type="text" placeholder="  Name" >
+                            <input class="sbinputemail w-50"  type="email" placeholder="  Mail">
+                        </div>
+                        <textarea class="w-100  d-lg-flex" id="sbtextarea" rows="6" placeholder="  Message"></textarea>
+                        <div class="wrapper">
+                            <button type="submit" class="sbmailbtn   my-3 color-apple-blauw shadow-sm">Submit Mail</button>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 ps-lg-5">
+                        <div class="pb-4 text-center text-lg-start" id="sbcontactinfo">
+                            <h3 class="mb-0 text-white fs-5 ">MORE INFO</h3>
+                            <hr class="sbhr my-2 w-100">
+                            <p class="my-0"><a class="text-reset text-decoration-none" href="tel:25558885550320">2 (555) 888 555 03 20</a></p>
+                            <p class="sbskype "><a id="sbmail2" href="mailto:info@domain.com">info@domain.com</a></p>
+                            <p class="py-0 my-0"><span>skype: </span>username</p>
+                            <address><span>John Dowl</span><br>Salt Talke city. UT<br>87550<br></address>
+                            <div class=" my-0 text-center text-lg-start">
+                                <button type="submit" class="sbmailbtn  color-apple-blauw shadow-sm mt-3">Purchase</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="bg-bruin" id="main-sec-11-social-stefaan">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1 p-bruin-j text-center text-lg-start" data-aos="fade-down"
+                     data-aos-easing="linear"
+                     data-aos-duration="1500">
+                    <p class="text-white display-3" id="sbconnect">CONNECT WITH US</p>
+                    <p class="display-4 text-white" id="sbconnectl">Follow Us On Social Networks</p>
+                    <div class="sbtext-black fs-2 sbsicons ms-2">
+                        <a class="sbslink" href="https://github.com/" target="_blank"><i class="bi bi-github pe-2" ></i></a>
+                        <a class="sbslink" href="https://www.flickr.com/" target="_blank"><i class="bi bi-medium pe-2" ></i></a>
+                        <a class="sbslink" href="https://vimeo.com/" target="_blank"><i class="bi bi-vimeo pe-2" ></i></a>
+                        <a class="sbslink" href="https://twitter.com/home?lang=nl" target="_blank"><i class="bi bi-twitter pe-2" ></i></a>
+                        <a class="sbslink" href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook pe-2" ></i></a>
+                        <a class="sbslink" href="https://nl.wikipedia.org/wiki/Google%2B" target="_blank"><i class="bi bi-google pe-2" ></i></a>
+                        <a class="sbslink" href="https://www.pinterest.com/" target="_blank"><i class="bi bi-pinterest pe-2" ></i></a>
+                        <a class="sbslink" href="https://telegram.org/" target="_blank"><i class="bi bi-telegram pe-2" ></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section class="bg-zwart" id="footer-1-social-info-stefaan">
+        <div class="container-fluid">
+            <div class="row col-10 offset-1">
+                <div class="col-lg-4 col-12 ">
+                    <h3 class="sbhr text-white fw-bold fs-5 pt-5  text-center text-md-start">RECENT TWEETS</h3>
+                    <div class="justify-content-center justify-content-md-start d-flex">
+                        <a class="twitter-timeline" data-width="264" data-height="277" data-theme="dark" href="https://twitter.com/devjokes_?ref_src=twsrc%5Etfw">Tweets by devjokes_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                </div>
+                <div class="sblatest col-lg-4 col-12 text-center text-md-start">
+                    <h3 class="sbhr text-white fw-bold fs-5   pt-5 ">RECENT POSTS</h3>
+                    <p>15.10.2013</p>
+                    <p>Maecenas et nisl pellentesque, fermentum ante facilisis, aliquet ligula. </p>
+                    <p>9.10.2013</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>9.10.2013</p>
+                    <p>Aliquam eu leo adipiscing, imperdiet arcu nec, malesuada lorem.</p>
+                </div>
+                <div class="col-lg-4 text-center text-md-start ">
+                    <h3 class="sbhrw text-white fw-bold fs-5 pt-5 text-center text-md-start">PHOTO STREAM</h3>
+                    <a data-flickr-embed="true" href="https://www.flickr.com/photos/31791125@N06" title=""><img src="https://live.staticflickr.com/5537/30430404945_4754100b6c_n.jpg" width="320" height="240" alt=""></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sbzwartzwart" id="footer-2-copyright-stefaan">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-10 offset-1 d-flex my-5 align-items-center">
+                    <div class="col-lg-5 d-flex my-0 align-items-center">
+                        <a class="" href="#header-jan"><img src="images/logo.png" alt="logo"></a>
+                        <p class=" ps-2 my-0 fs-3 pe-2 "><a class="text-decoration-none text-white fw-bold" href="#header-jan">Parallels</a></p>
+                    </div>
+                    <div class="col-lg-7 d-lg-flex sbtextcolor-grey fs-6">
+                        <p class="my-0 ps-lg-5 pe-lg-4 fw-bold"><a class="text-reset text-decoration-none" href="tel:25558885550320">2 (555) 888 555 03 20</a><p>
+                        <p class="my-0 pe-lg-4"><a class="text-reset text-decoration-none fw-bold" href="mailto:info@domain.com">info@domain.com</a></p>
+                        <p class="my-0 pe-lg-4 fw-bold"><span class="fw-normal roboto-light">skype:</span> username</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
